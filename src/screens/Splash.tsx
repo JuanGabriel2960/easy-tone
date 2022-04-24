@@ -1,8 +1,10 @@
 import React, { useContext } from 'react'
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, ImageBackground } from 'react-native';
 import { theme, colors } from '../theme';
 import { AppContext } from '../context/AppContext';
 import { onboarding } from '../data';
+
+const redGradient = require('../assets/red-gradient.png')
 
 export const Splash = () => {
 
@@ -31,7 +33,9 @@ export const Splash = () => {
                 }
             </View>
             <TouchableOpacity style={[styles.btn]} onPress={() => next()}>
-                <Text style={[_2xl, bold, styles.btnText]}>{onboardingStep === onboarding.length - 1 ? 'START' : 'NEXT'}</Text>
+                <ImageBackground source={redGradient} resizeMode="cover" style={[{ paddingVertical: 12 }]} imageStyle={{ borderRadius: 30 }}>
+                    <Text style={[_2xl, bold, styles.btnText]}>{onboardingStep === onboarding.length - 1 ? 'START' : 'NEXT'}</Text>
+                </ImageBackground>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => setSplashScreen(false)}>
                 <Text style={[styles.btnSkip]}>Skip introduction</Text>
@@ -45,9 +49,7 @@ const styles = StyleSheet.create({
         color: colors.white
     },
     btn: {
-        paddingVertical: 12,
         borderRadius: 30,
-        backgroundColor: 'red',
         width: '100%',
         maxWidth: '70%',
         marginTop: 25,
