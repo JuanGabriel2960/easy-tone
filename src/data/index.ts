@@ -38,19 +38,22 @@ export const homeCards: HomeCards[] = [
         title: 'Elementary',
         description: 'Learn a lot of songs to impress your friends.',
         icon: iconPlus,
-        gradient: redGradient
+        gradient: redGradient,
+        message: 'The elementary grade of the conservatory lasts around 4 years and the age range to enter is between 8 and 12 years.'
     },
     {
         title: 'Professional',
         description: 'Here you will learn new concepts and put into practice what you learned in the previous lesson.',
         icon: iconPlus,
-        gradient: blueGradient
+        gradient: blueGradient,
+        message: 'The Professional grade of the conservatory lasts around 6 years and the age, being the longest of the 3.'
     },
     {
         title: 'Higher',
         description: 'You will put the previously learned theory into practice and learn advanced tips.',
         icon: iconPlus,
-        gradient: purpleGradient
+        gradient: purpleGradient,
+        message: 'The higher grade of the conservatory lasts around 4 years and with this title you can wirk as a techaer or as a composer.'
     },
 ]
 

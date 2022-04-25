@@ -20,8 +20,8 @@ export const Home = ({ navigation }: Props) => {
   return (
     <View style={[container, column, alignCenter]}>
       {
-        homeCards.map(({ title, description, icon, gradient }) => (
-          <TouchableOpacity style={{ width: '100%' }} activeOpacity={0.7} key={title} onPress={() => navigation.navigate('Degree', { title, gradient })}>
+        homeCards.map(({ title, description, icon, gradient, message }) => (
+          <TouchableOpacity style={{ width: '100%' }} activeOpacity={0.7} key={title} onPress={() => navigation.navigate('Degree', { title, gradient, message })}>
             <Card title={title} description={description} icon={icon} gradient={gradient} />
           </TouchableOpacity>
         ))

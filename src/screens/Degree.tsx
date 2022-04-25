@@ -4,6 +4,7 @@ import { StackScreenProps } from '@react-navigation/stack'
 import { colors, theme } from '../theme';
 import { Circle } from '../components/Circle';
 import { degreeOptions } from '../data';
+import { CardMessage } from '../components/CardMessage';
 
 interface Props extends StackScreenProps<any, any> { }
 
@@ -22,7 +23,7 @@ export const Degree = ({ route }: Props) => {
                     ))
                 }
             </View>
-            <Text style={[_3xl, bold, styles.title]}>{params.title}</Text>
+            <CardMessage message={params.message} />
         </View>
     )
 }

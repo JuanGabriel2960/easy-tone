@@ -24,6 +24,7 @@ export interface HomeCards {
     description: string;
     icon: ImageSourcePropType;
     gradient: ImageSourcePropType;
+    message: string;
 }
 
 export interface DegreeOptions {
