@@ -1,4 +1,4 @@
-import { Onboarding } from '../interfaces/index';
+import { DegreeOptions, HomeCards, Onboarding } from '../interfaces/index';
 
 export const onboarding: Onboarding[] = [
     {
@@ -33,7 +33,7 @@ const redGradient = require('../assets/red-gradient.png')
 const blueGradient = require('../assets/blue-gradient.png')
 const purpleGradient = require('../assets/purple-gradient.png')
 
-export const homeCards: any[] = [
+export const homeCards: HomeCards[] = [
     {
         title: 'Elementary',
         description: 'Learn a lot of songs to impress your friends.',
@@ -51,5 +51,29 @@ export const homeCards: any[] = [
         description: 'You will put the previously learned theory into practice and learn advanced tips.',
         icon: iconPlus,
         gradient: purpleGradient
+    },
+]
+
+const iconTheory = require('../assets/icon-theory.png')
+const iconExercises = require('../assets/icon-exercises.png')
+const iconPieces = require('../assets/icon-pieces.png')
+const iconExam = require('../assets/icon-exam.png')
+
+export const degreeOptions: DegreeOptions[] = [
+    {
+        icon: iconTheory,
+        text: 'Theory',
+    },
+    {
+        icon: iconExercises,
+        text: 'Exercises',
+    },
+    {
+        icon: iconPieces,
+        text: 'Pieces',
+    },
+    {
+        icon: iconExam,
+        text: 'Exam',
     },
 ]

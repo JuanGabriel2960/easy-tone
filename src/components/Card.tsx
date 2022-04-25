@@ -1,6 +1,5 @@
 import React from 'react'
 import { Text, View, StyleSheet, Image, ImageSourcePropType, ImageBackground } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 import { colors, theme } from '../theme';
 
 interface Props {
@@ -19,9 +18,7 @@ export const Card = ({ title, description, icon, gradient }: Props) => {
             <Text style={[_3xl, bold, styles.title]}>{title}</Text>
             <View style={[row, justifyBetween]}>
                 <Text style={[base, styles.description]}>{description}</Text>
-                <TouchableOpacity>
-                    <Image source={icon} />
-                </TouchableOpacity>
+                <Image source={icon} />
             </View>
         </ImageBackground>
     )
