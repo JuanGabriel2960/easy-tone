@@ -10,7 +10,7 @@ export const colors = {
 export const theme = StyleSheet.create({
     container: {
         backgroundColor: colors.dark,
-        padding: 15,
+        padding: 20,
         flex: 1,
     },
     row: {
@@ -21,10 +21,15 @@ export const theme = StyleSheet.create({
     column: {
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center',
     },
-    center: {
+    alignCenter: {
+        alignItems: 'center'
+    },
+    justifyCenter: {
         justifyContent: 'center'
+    },
+    justifyBetween: {
+        justifyContent: 'space-between'
     },
     light: {
         fontWeight: '300'

@@ -9,7 +9,7 @@ const redGradient = require('../assets/red-gradient.png')
 export const Splash = () => {
 
     const { onboardingStep, setSplashScreen, setOnboardingStep } = useContext(AppContext);
-    const { container, column, center, base, _2xl, _3xl, bold, row } = theme;
+    const { container, column, alignCenter, justifyCenter, base, _2xl, _3xl, bold, row } = theme;
 
     const next = () => {
         if (onboardingStep === onboarding.length - 1) {
@@ -20,7 +20,7 @@ export const Splash = () => {
     }
 
     return (
-        <View style={[container, column, center]}>
+        <View style={[container, column, alignCenter, justifyCenter]}>
             <Text style={[_3xl, bold, styles.title]}>{onboarding[onboardingStep].title}</Text>
             <Text style={[base, styles.aboutText]}>{onboarding[onboardingStep].description}</Text>
             <View style={[row, styles.btnPointsContainer]}>
