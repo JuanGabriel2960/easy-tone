@@ -27,3 +27,29 @@ export const onboarding: Onboarding[] = [
         description: 'Take your instrument and start learning, but do not forget the most important thing, enjoy it.'
     },
 ]
+
+const iconPlus = require('../assets/icon-plus.png')
+const redGradient = require('../assets/red-gradient.png')
+const blueGradient = require('../assets/blue-gradient.png')
+const purpleGradient = require('../assets/purple-gradient.png')
+
+export const homeCards: any[] = [
+    {
+        title: 'Elementary',
+        description: 'Learn a lot of songs to impress your friends.',
+        icon: iconPlus,
+        gradient: redGradient
+    },
+    {
+        title: 'Professional',
+        description: 'Here you will learn new concepts and put into practice what you learned in the previous lesson.',
+        icon: iconPlus,
+        gradient: blueGradient
+    },
+    {
+        title: 'Higher',
+        description: 'You will put the previously learned theory into practice and learn advanced tips.',
+        icon: iconPlus,
+        gradient: purpleGradient
+    },
+]
