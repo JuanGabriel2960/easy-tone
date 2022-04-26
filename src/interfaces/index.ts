@@ -50,12 +50,18 @@ export interface Data {
 }
 
 export interface ExerciseResp {
-    ID:        string;
+    ID: string;
     exercises: Exercise[];
-    degree:    string;
+    degree: string;
 }
 
 export interface Exercise {
-    name:    string;
+    name: string;
     content: string;
+}
+
+export interface PieceResp {
+    ID: string;
+    pieces: string[];
+    degree: string;
 }

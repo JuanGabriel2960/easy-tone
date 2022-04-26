@@ -1,10 +1,11 @@
 import { useState } from "react"
 import http from "../api/http";
-import { ExerciseResp, TheoryResp, ValidDegree } from '../interfaces/index';
+import { ExerciseResp, PieceResp, TheoryResp, ValidDegree } from '../interfaces/index';
 
 export const useDegree = () => {
     const [theory, setTheory] = useState<TheoryResp | null>(null)
     const [exercise, setExercise] = useState<ExerciseResp | null>(null)
+    const [piece, setPiece] = useState<PieceResp | null>(null)
 
     const getTheory = async (degree: ValidDegree) => {
         try {
@@ -24,10 +25,21 @@ export const useDegree = () => {
         }
     }
 
+    const getPiece = async (degree: ValidDegree) => {
+        try {
+            const resp = await http.get<PieceResp>(`/api/degree/piece/${degree}`)
+            setPiece(resp.data)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
     return {
         theory,
         exercise,
+        piece,
         getTheory,
-        getExercise
+        getExercise,
+        getPiece
     }
 }

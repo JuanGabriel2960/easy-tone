@@ -4,28 +4,29 @@ import { colors, theme } from '../theme';
 import { useDegree } from '../hooks/useDegree';
 import { StackScreenProps } from '@react-navigation/stack';
 import { ScrollView } from 'react-native-gesture-handler';
-import { CardExercises } from '../components/CardExercises';
 
 interface Props extends StackScreenProps<any, any> { }
 
-export const Exercises = ({ route }: Props) => {
+export const Pieces = ({ route }: Props) => {
 
-    const { exercise, getExercise } = useDegree()
+    const { piece, getPiece } = useDegree()
     const params = route.params as any;
-    const { container, lg, _3xl, bold, column } = theme;
+    const { container, lg, _3xl, base, bold, column } = theme;
 
     useEffect(() => {
-        getExercise(params.degree)
+        getPiece(params.degree)
     }, [])
 
     return (
         <View style={[container, column]}>
-            <Text style={[_3xl, bold, styles.title]}>Exercises Check</Text>
-            <Text style={[lg, styles.content]}>Do this series of daily exercises and you will notice an improvement with the instrument.</Text>
+            <Text style={[_3xl, bold, styles.title]}>Pieces Check</Text>
+            <Text style={[lg, styles.content]}>One of the objectives of the {params.degree} grade is to learn this series of musical pieces.</Text>
             <ScrollView>
                 {
-                    exercise?.exercises.map(({ name, content }) => (
-                        <CardExercises key={name} name={name} content={content} />
+                    piece?.pieces.map((pieces) => (
+                        <View key={pieces}>
+                            <Text style={[base, bold, styles.pieces]}>{pieces}</Text>
+                        </View>
                     ))
                 }
             </ScrollView>
@@ -41,5 +42,9 @@ const styles = StyleSheet.create({
     content: {
         color: colors.white,
         marginBottom: 20
+    },
+    pieces: {
+        color: colors.white,
+        marginBottom: 15
     }
 })
