@@ -5,6 +5,7 @@ export const colors = {
     white: '#FFFFFF',
     gray: '#C4C4C4',
     red: '#F54B65',
+    silver: '#4E596F',
 }
 
 export const theme = StyleSheet.create({
