@@ -36,7 +36,8 @@ const styles = StyleSheet.create({
     },
     title: {
         color: colors.white,
-        marginBottom: 10
+        marginBottom: 10,
+        textTransform: 'capitalize'
     },
     description: {
         color: colors.white,

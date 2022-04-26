@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
         marginTop: 15,
         marginBottom: 25,
         textAlign: 'center',
-        maxWidth: '60%'
+        maxWidth: '65%'
     },
     btnText: {
         textAlign: 'center',

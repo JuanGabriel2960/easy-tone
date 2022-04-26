@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, View, ImageSourcePropType, Text, StyleSheet, ImageBackground } from 'react-native';
+import { Image, ImageSourcePropType, Text, StyleSheet, ImageBackground, View } from 'react-native';
 import { theme, colors } from '../theme';
 
 interface Props {
@@ -13,7 +13,7 @@ export const Circle = ({ icon, gradient, text }: Props) => {
     const { row, justifyCenter, alignCenter, xl, bold } = theme;
 
     return (
-        <View style={[alignCenter, { flexBasis: "50%" }]}>
+        <View style={[alignCenter]}>
             <ImageBackground source={gradient} resizeMode="cover" style={[row, justifyCenter, styles.circle]} imageStyle={[{ borderRadius: 100 }]}>
                 <Image source={icon} />
             </ImageBackground>
