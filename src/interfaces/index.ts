@@ -48,3 +48,14 @@ export interface Data {
     title: string;
     content: string;
 }
+
+export interface ExerciseResp {
+    ID:        string;
+    exercises: Exercise[];
+    degree:    string;
+}
+
+export interface Exercise {
+    name:    string;
+    content: string;
+}
