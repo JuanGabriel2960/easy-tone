@@ -31,3 +31,9 @@ export interface DegreeOptions {
     icon: ImageSourcePropType;
     text: string;
 }
+
+export enum ValidDegree {
+    Elementary = "elementary",
+    Professional = "professional",
+    Higher = "higher",
+}
