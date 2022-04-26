@@ -37,3 +37,14 @@ export enum ValidDegree {
     Professional = "professional",
     Higher = "higher",
 }
+
+export interface TheoryResp {
+    ID: string;
+    data: Data;
+    degree: string;
+}
+
+export interface Data {
+    title: string;
+    content: string;
+}
