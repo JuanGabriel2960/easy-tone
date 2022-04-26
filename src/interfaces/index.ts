@@ -37,3 +37,25 @@ export enum ValidDegree {
     Professional = "professional",
     Higher = "higher",
 }
+
+export interface TheoryResp {
+    ID: string;
+    data: Data;
+    degree: string;
+}
+
+export interface Data {
+    title: string;
+    content: string;
+}
+
+export interface ExerciseResp {
+    ID:        string;
+    exercises: Exercise[];
+    degree:    string;
+}
+
+export interface Exercise {
+    name:    string;
+    content: string;
+}
