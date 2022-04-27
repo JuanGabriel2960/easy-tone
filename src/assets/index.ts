@@ -1,0 +1,35 @@
+export const noteC = require('./note-C.png');
+export const noteD = require('./note-D.png');
+export const noteE = require('./note-E.png');
+export const noteF = require('./note-F.png');
+export const noteG = require('./note-G.png');
+export const noteA = require('./note-A.png');
+export const noteB = require('./note-B.png');
+
+export const chordCMajor = require('./chord-C-major.png');
+export const chordCMinor = require('./chord-C-minor.png');
+export const chordDMajor = require('./chord-D-major.png');
+export const chordDMinor = require('./chord-D-minor.png');
+export const chordEMajor = require('./chord-E-major.png');
+export const chordEMinor = require('./chord-E-minor.png');
+export const chordFMajor = require('./chord-F-major.png');
+export const chordFMinor = require('./chord-F-minor.png');
+export const chordGMajor = require('./chord-G-major.png');
+export const chordGMinor = require('./chord-G-minor.png');
+export const chordAMajor = require('./chord-A-major.png');
+export const chordAMinor = require('./chord-A-minor.png');
+export const chordBMajor = require('./chord-B-major.png');
+export const chordBMinor = require('./chord-B-minor.png');
+
+export const interval2Major = require('./interval-2-major.png');
+export const interval2Minor = require('./interval-2-minor.png');
+export const interval3Major = require('./interval-3-major.png');
+export const interval3Minor = require('./interval-3-minor.png');
+export const interval4Augmented = require('./interval-4-augmented.png');
+export const interval4Perfect = require('./interval-4-perfect.png');
+export const interval5Augmented = require('./interval-5-augmented.png');
+export const interval5Perfect = require('./interval-5-perfect.png');
+export const interval6Major = require('./interval-6-major.png');
+export const interval7Major = require('./interval-7-major.png');
+export const interval7Minor = require('./interval-7-minor.png');
+export const intervalUnison = require('./interval-unison.png');

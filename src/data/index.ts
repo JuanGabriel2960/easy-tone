@@ -39,14 +39,14 @@ export const homeCards: HomeCards[] = [
         description: 'Learn what it takes to play the melodies of many of your favorite songs to impress your friends.',
         icon: iconPlus,
         gradient: redGradient,
-        message: 'The elementary grade of the conservatory lasts around 4 years and the age range to enter is between 8 and 12 years.'
+        message: 'The elementary grade of the conservatory lasts around 4 years and the age range to enter is between 8 and 12 years.',
     },
     {
         title: 'professional',
         description: 'Here you will learn new concepts and put into practice what you learned in the previous lesson.',
         icon: iconPlus,
         gradient: blueGradient,
-        message: 'The Professional grade of the conservatory lasts around 6 years and the age, being the longest of the 3.'
+        message: 'The Professional grade of the conservatory lasts around 6 years and the age, being the longest of the 3.',
     },
     {
         title: 'higher',
@@ -80,3 +80,9 @@ export const degreeOptions: DegreeOptions[] = [
         text: 'Exam',
     },
 ]
+
+export const elementaryExamOptions: string[] = ['C', 'D', 'E', 'F', 'G', 'A', 'B']
+
+export const professionalExamOptions: string[] = ['C major', 'C minor', 'D major', 'D minor', 'E major', 'E minor', 'F major', 'F minor', 'G major', 'G minor', 'A major', 'A minor', 'B major', 'B minor']
+
+export const higherExamOptions: string[] = ['2 Maj', '2 Min', '3 Maj', '3 Min', '4 Aug', '4 Per', '5 Aug', '5 Per', '6 Maj', '7 Maj', '7 Min', 'Unison']
