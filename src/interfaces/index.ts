@@ -20,11 +20,11 @@ export interface Onboarding {
 }
 
 export interface HomeCards {
+    page: string;
     title: string;
     description: string;
     icon: ImageSourcePropType;
     gradient: ImageSourcePropType;
-    message: string;
 }
 
 export interface DegreeOptions {

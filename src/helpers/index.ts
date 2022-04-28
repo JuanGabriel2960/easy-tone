@@ -198,3 +198,19 @@ export const getExamDescription = (degree: ValidDegree) => {
             return ''
     }
 }
+
+export const getDegreeMessage = (degree: ValidDegree) => {
+    switch (degree) {
+        case 'elementary':
+            return 'The elementary grade of the conservatory lasts around 4 years and the age range to enter is between 8 and 12 years.'
+
+        case 'professional':
+            return 'The Professional grade of the conservatory lasts around 6 years and the age, being the longest of the 3.'
+
+        case 'higher':
+            return 'The higher grade of the conservatory lasts around 4 years and with this title you can wirk as a techaer or as a composer.'
+
+        default:
+            return ''
+    }
+}
