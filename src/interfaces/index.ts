@@ -20,11 +20,11 @@ export interface Onboarding {
 }
 
 export interface HomeCards {
+    page: string;
     title: string;
     description: string;
     icon: ImageSourcePropType;
     gradient: ImageSourcePropType;
-    message: string;
 }
 
 export interface DegreeOptions {
@@ -64,4 +64,12 @@ export interface PieceResp {
     ID: string;
     pieces: string[];
     degree: string;
+}
+
+export interface SongResp {
+    ID: string;
+    name: string;
+    author: string;
+    url: string;
+    image: string;
 }

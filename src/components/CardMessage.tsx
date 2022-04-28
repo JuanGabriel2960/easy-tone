@@ -1,5 +1,5 @@
 import React from 'react'
-import { ImageBackground, StyleSheet, Text, View } from 'react-native'
+import { ImageBackground, StyleSheet, Text } from 'react-native'
 import { colors, theme } from '../theme';
 const iconMessage = require('../assets/icon-message.png')
 

@@ -6,6 +6,7 @@ import { Theory } from '../screens/Theory';
 import { Exercises } from '../screens/Exercises';
 import { Pieces } from '../screens/Pieces';
 import { Exam } from '../screens/Exam';
+import { Songs } from '../screens/Songs';
 
 export type RootStackParams = {
     Home: undefined,
@@ -14,6 +15,7 @@ export type RootStackParams = {
     Exercises: undefined,
     Pieces: undefined,
     Exam: undefined,
+    Songs: undefined,
 }
 
 const Stack = createStackNavigator<RootStackParams>();
@@ -27,6 +29,7 @@ export const HomeStack = () => {
             <Stack.Screen name="Exercises" options={{ title: "Exercises" }} component={Exercises} />
             <Stack.Screen name="Pieces" options={{ title: "Pieces" }} component={Pieces} />
             <Stack.Screen name="Exam" options={{ title: "Exam" }} component={Exam} />
+            <Stack.Screen name="Songs" options={{ title: "Songs" }} component={Songs} />
         </Stack.Navigator>
     );
 }

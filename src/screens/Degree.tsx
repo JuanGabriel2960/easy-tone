@@ -5,6 +5,7 @@ import { colors, theme } from '../theme';
 import { Circle } from '../components/Circle';
 import { degreeOptions } from '../data';
 import { CardMessage } from '../components/CardMessage';
+import { getDegreeMessage } from '../helpers';
 
 interface Props extends StackScreenProps<any, any> { }
 
@@ -25,7 +26,7 @@ export const Degree = ({ route, navigation }: Props) => {
                     ))
                 }
             </View>
-            <CardMessage message={params.message} />
+            <CardMessage message={getDegreeMessage(params.title)} />
         </View>
     )
 }

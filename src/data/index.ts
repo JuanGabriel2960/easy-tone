@@ -35,26 +35,33 @@ const purpleGradient = require('../assets/purple-gradient.png')
 
 export const homeCards: HomeCards[] = [
     {
+        page: 'Degree',
         title: 'elementary',
         description: 'Learn what it takes to play the melodies of many of your favorite songs to impress your friends.',
         icon: iconPlus,
         gradient: redGradient,
-        message: 'The elementary grade of the conservatory lasts around 4 years and the age range to enter is between 8 and 12 years.',
     },
     {
+        page: 'Degree',
         title: 'professional',
         description: 'Here you will learn new concepts and put into practice what you learned in the previous lesson.',
         icon: iconPlus,
         gradient: blueGradient,
-        message: 'The Professional grade of the conservatory lasts around 6 years and the age, being the longest of the 3.',
     },
     {
+        page: 'Degree',
         title: 'higher',
         description: 'You will put the previously learned theory into practice and learn advanced tips.',
         icon: iconPlus,
         gradient: purpleGradient,
-        message: 'The higher grade of the conservatory lasts around 4 years and with this title you can wirk as a techaer or as a composer.'
     },
+    {
+        page: 'Songs',
+        title: 'songs',
+        description: 'Learn the best songs to learn on the piano.',
+        icon: iconPlus,
+        gradient: redGradient,
+    }
 ]
 
 const iconTheory = require('../assets/icon-theory.png')
