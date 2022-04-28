@@ -27,6 +27,8 @@ export const AppProvider = ({ children }: any) => {
     const checkSplashScreen = async () => {
         const splash = await AsyncStorage.getItem('Splash') || 'true'
 
+        // TODO
+        
         // if (splash === 'false') {
         //     return dispatch({
         //         type: 'setSplashScreen', payload: {

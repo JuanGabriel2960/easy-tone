@@ -65,3 +65,11 @@ export interface PieceResp {
     pieces: string[];
     degree: string;
 }
+
+export interface SongResp {
+    ID: string;
+    name: string;
+    author: string;
+    url: string;
+    image: string;
+}
