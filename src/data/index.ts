@@ -29,9 +29,11 @@ export const onboarding: Onboarding[] = [
 ]
 
 const iconPlus = require('../assets/icon-plus.png')
+const iconSongs = require('../assets/icon-pieces.png')
 const redGradient = require('../assets/red-gradient.png')
 const blueGradient = require('../assets/blue-gradient.png')
 const purpleGradient = require('../assets/purple-gradient.png')
+const pinkGradient = require('../assets/pink-gradient.png')
 
 export const homeCards: HomeCards[] = [
     {
@@ -58,9 +60,9 @@ export const homeCards: HomeCards[] = [
     {
         page: 'Songs',
         title: 'songs',
-        description: 'Learn the best songs to learn on the piano.',
-        icon: iconPlus,
-        gradient: redGradient,
+        description: 'Here you will find tutorials of some of the best songs to learn on the piano.',
+        icon: iconSongs,
+        gradient: pinkGradient,
     }
 ]
 
